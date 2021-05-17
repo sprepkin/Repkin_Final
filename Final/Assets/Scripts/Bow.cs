@@ -7,6 +7,7 @@ public class Bow : MonoBehaviour
     public GameObject arrow;
     public float launchForce;
     public Transform shotPoint;
+    public int arrowDropoff;
     private bool charged;
     private float chargePower;
 
@@ -42,7 +43,7 @@ public class Bow : MonoBehaviour
         if (Input.GetMouseButtonUp(0) && charged == true)
         {
             dragEndPos = Input.mousePosition;
-            chargePower = (dragStartPos - dragEndPos).magnitude / 100;
+            chargePower = (dragStartPos - dragEndPos).magnitude / arrowDropoff;
             charged = false;
             Shoot();
         }
