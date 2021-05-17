@@ -13,8 +13,6 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     public SpriteRenderer spriteRenderer;
     public Animator animator;
-    public int score;
-    public TextMeshProUGUI countText;
 
     //private Vector2 respawn;
 
@@ -23,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
     {
         //Vector2 respawn = new Vector2(spawnPoint.transform.position.x, spawnPoint.transform.position.y);
         rB2D = GetComponent<Rigidbody2D>();
-        score = 0;
     }
 
     // Update is called once per frame
@@ -40,10 +37,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void SetCountText()
-    {
-        countText.text = "score: " + score.ToString();
-    }
 
     void FixedUpdate()
     {
@@ -79,13 +72,6 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Coin"))
-        {
-            score += 50;
-            SetCountText();
-
-            Destroy(other.gameObject);
-        }
 
         if (other.gameObject.CompareTag("Death"))
         {
