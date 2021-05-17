@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Bow : MonoBehaviour
 {
+    public GameObject arrow;
+    public float launchForce;
+    public Transform shotPoint;
+
     void Update()
     {
         Vector2 bowPosition = transform.position;
@@ -11,5 +15,15 @@ public class Bow : MonoBehaviour
         Vector2 direction = mousePosition - bowPosition;
         transform.right = direction;
         
+        if (Input.GetMouseButtonDown(0))
+        {
+            Shoot();
+        }
+    }
+
+    void Shoot()
+    {
+        GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
+        newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
     }
 }
