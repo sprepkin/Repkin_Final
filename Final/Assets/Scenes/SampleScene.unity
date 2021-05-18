@@ -3710,6 +3710,7 @@ MonoBehaviour:
   arrow: {fileID: 5793882908695957641, guid: 94543f08b21fdfe49ba5780941b56110, type: 3}
   launchForce: 13
   shotPoint: {fileID: 1076144357}
+  arrowDropoff: 100
 --- !u!1 &856624076
 GameObject:
   m_ObjectHideFlags: 0
