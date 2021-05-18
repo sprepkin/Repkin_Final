@@ -8,6 +8,8 @@ public class Bow : MonoBehaviour
     public float launchForce;
     public Transform shotPoint;
     public int arrowDropoff;
+    public float slowAmount = .25f;
+
     private bool charged;
     private float chargePower;
 
@@ -38,6 +40,15 @@ public class Bow : MonoBehaviour
             charged = true;
             //Now you are ready to launch something with dragDir something like this after spawning the arrow:
             //arrowRigidbody.velocity = dragDir * launchSpeed;
+        }
+
+        if (charged == true)
+        {
+            Time.timeScale = slowAmount;
+        }
+        else
+        {
+            Time.timeScale = 1;
         }
 
         if (Input.GetMouseButtonUp(0) && charged == true)
