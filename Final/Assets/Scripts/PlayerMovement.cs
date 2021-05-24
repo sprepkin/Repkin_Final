@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         //Run left and right
         float horizontalInput = Input.GetAxis("Horizontal");
 
-        rB2D.velocity = new Vector2(horizontalInput * runSpeed * Time.deltaTime, rB2D.velocity.y);
+        rB2D.velocity = new Vector2(horizontalInput * runSpeed * Time.fixedDeltaTime, rB2D.velocity.y);
 
         if (rB2D.velocity.x > 0)
         {
