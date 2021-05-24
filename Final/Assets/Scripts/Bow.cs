@@ -45,10 +45,12 @@ public class Bow : MonoBehaviour
         if (charged == true)
         {
             Time.timeScale = slowAmount;
+            Time.fixedDeltaTime = slowAmount * 0.02f;
         }
         else
         {
             Time.timeScale = 1;
+            Time.fixedDeltaTime = 0.02f;
         }
 
         if (Input.GetMouseButtonUp(0) && charged == true)
