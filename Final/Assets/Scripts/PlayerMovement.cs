@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded;
     bool onWallLeft = false;
     bool onWallRight = false;
+    bool canWallJump = true;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Jump();
             }
-            else if (onWallLeft == true || onWallRight == true)
+            else if ((onWallLeft == true || onWallRight == true) && canWallJump == true)
             {
                 WallJump();
             }
@@ -68,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
         if (Physics2D.BoxCast(transform.position, new Vector2(1f, .1f), 0f, Vector2.down, .01f, levelMask))
         {
             isGrounded = true;
+            canWallJump = true;
         }
         else
         {
@@ -112,6 +114,8 @@ public class PlayerMovement : MonoBehaviour
 
     void WallJump()
     {
+        canWallJump = false;
+
         if (onWallLeft == true)
         {
             rB2D.velocity = new Vector2(wallJumpForce, jumpForce - 5);
