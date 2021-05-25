@@ -61,6 +61,11 @@ public class Bow : MonoBehaviour
             charged = false;
             Shoot();
         }
+
+        if (Arrow.collected == true)
+        {
+            arrowCount += 1;
+        }
     }
 
     void Shoot()

@@ -8,6 +8,7 @@ public class Arrow : MonoBehaviour
 
     Rigidbody2D rb;
     bool hit;
+    public static bool collected = false;
     //float despawnTimer = 0f;
 
     void Start()
@@ -32,6 +33,7 @@ public class Arrow : MonoBehaviour
         {
             Destroy(gameObject);
         }*/
+        collected = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -40,5 +42,14 @@ public class Arrow : MonoBehaviour
         rb.velocity = Vector2.zero;
         rb.isKinematic = true;
         //despawnTimer = despawnTime;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            collected = true;
+            Destroy(gameObject);
+        }
     }
 }
