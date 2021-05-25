@@ -7,15 +7,21 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rB2D;
+    BoxCollider2D c2D;
 
     //public GameObject spawnPoint;
     public float runSpeed;
     public float jumpForce;
+    public float wallJumpForce;
     public SpriteRenderer spriteRenderer;
     //public Animator animator;
 
+
     //private Vector2 respawn;
-    
+    bool isGrounded;
+    bool onWallLeft = false;
+    bool onWallRight = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,15 +32,48 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        int levelMask = LayerMask.GetMask("Level");
+
         if (Input.GetButtonDown("Jump"))
         {
-            int levelMask = LayerMask.GetMask("Level");
-
-            if (Physics2D.BoxCast(transform.position, new Vector2(1f, .1f), 0f, Vector2.down, .01f, levelMask))
+            if (isGrounded == true)
             {
                 Jump();
             }
+            else if (onWallLeft == true || onWallRight == true)
+            {
+                WallJump();
+            }
         }
+
+        if (Physics2D.BoxCast(transform.position, new Vector2(1f, .1f), 0f, Vector2.left, .01f, levelMask) && isGrounded == false)
+        {
+            onWallLeft = true;
+        }
+        else
+        {
+            onWallLeft = false;
+        }
+
+        if (Physics2D.BoxCast(transform.position, new Vector2(1f, .1f), 0f, Vector2.right, .01f, levelMask) && isGrounded == false)
+        {
+            onWallRight = true;
+        }
+        else
+        {
+            onWallRight = false;
+        }
+
+        if (Physics2D.BoxCast(transform.position, new Vector2(1f, .1f), 0f, Vector2.down, .01f, levelMask))
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+       
     }
 
 
@@ -68,6 +107,20 @@ public class PlayerMovement : MonoBehaviour
     void Jump()
     {
         rB2D.velocity = new Vector2(rB2D.velocity.x, jumpForce);
+        isGrounded = false;
+    }
+
+    void WallJump()
+    {
+        if (onWallLeft == true)
+        {
+            rB2D.velocity = new Vector2(wallJumpForce, jumpForce - 5);
+        }
+        
+        if (onWallRight == true)
+        {
+            rB2D.velocity = new Vector2(wallJumpForce, jumpForce - 5);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
