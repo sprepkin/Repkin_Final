@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Target : MonoBehaviour
+public class Bridge : MonoBehaviour
 {
-    public static bool triggered = false;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -13,13 +11,8 @@ public class Target : MonoBehaviour
     }
 
     // Update is called once per frame
-
-
-    void OnCollisionEnter2D (Collision2D col)
+    void Update()
     {
-        if (col.gameObject.tag == "Arrow")
-        {
-            triggered = true;
-        }
+        
     }
 }
