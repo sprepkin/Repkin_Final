@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
-    public int despawnTime;
+    //public int despawnTime;
 
     Rigidbody2D rb;
     bool hit;
-    float despawnTimer = 0f;
+    //float despawnTimer = 0f;
 
     void Start()
     {
@@ -17,10 +17,10 @@ public class Arrow : MonoBehaviour
 
     void Update()
     {
-        if (despawnTimer > 0f)
+        /*if (despawnTimer > 0f)
         {
             despawnTimer -= Time.deltaTime;
-        }
+        }*/
 
         if (hit == false)
         {
@@ -28,10 +28,10 @@ public class Arrow : MonoBehaviour
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
 
-        if (hit == true && despawnTimer <= 0)
+        /*if (hit == true && despawnTimer <= 0)
         {
             Destroy(gameObject);
-        }
+        }*/
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -39,6 +39,6 @@ public class Arrow : MonoBehaviour
         hit = true;
         rb.velocity = Vector2.zero;
         rb.isKinematic = true;
-        despawnTimer = despawnTime;
+        //despawnTimer = despawnTime;
     }
 }

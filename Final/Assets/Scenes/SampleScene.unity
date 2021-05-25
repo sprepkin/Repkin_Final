@@ -3847,6 +3847,7 @@ MonoBehaviour:
   shotPoint: {fileID: 1076144357}
   arrowDropoff: 100
   slowAmount: 0.25
+  arrowCount: 2
 --- !u!1 &856624076
 GameObject:
   m_ObjectHideFlags: 0

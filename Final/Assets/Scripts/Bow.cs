@@ -9,6 +9,7 @@ public class Bow : MonoBehaviour
     public Transform shotPoint;
     public int arrowDropoff;
     public float slowAmount = .25f;
+    public int arrowCount = 2;
 
     private bool charged;
     private float chargePower;
@@ -26,12 +27,12 @@ public class Bow : MonoBehaviour
 
         //Difference between GetMouseButtonDown vs GetMouseButton is the difference between first frame of just pressing and continuous held down frames
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && arrowCount > 0)
         {//Left mouse button just pressed
             dragStartPos = Input.mousePosition;//Store the position when the left mouse button was first pressed
         }
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && arrowCount > 0)
         {//Left mouse button held
             Vector3 dragDist = dragStartPos - Input.mousePosition;//The direction we've dragged the mouse in is calculated by subtracted the current mouse position from the initial position
             /*Because dragDir is in pixels, we divide by screen width so that larger monitors don't get a huge number compared to small monitors. The same relative distance of each screen
@@ -66,5 +67,6 @@ public class Bow : MonoBehaviour
     {
         GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
         newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce * chargePower;
+        arrowCount -= 1;
     }
 }
