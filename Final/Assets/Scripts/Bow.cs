@@ -54,7 +54,7 @@ public class Bow : MonoBehaviour
             Time.fixedDeltaTime = 0.02f;
         }
 
-        if (Input.GetMouseButtonUp(0) && charged == true)
+        if (Input.GetMouseButtonUp(0) && charged == true && arrowCount > 0)
         {
             dragEndPos = Input.mousePosition;
             chargePower = (dragStartPos - dragEndPos).magnitude / arrowDropoff;
@@ -62,10 +62,12 @@ public class Bow : MonoBehaviour
             Shoot();
         }
 
-        if (Arrow.collected == true)
+        if (Arrow.collected == 1)
         {
             arrowCount += 1;
         }
+
+        Arrow.collected = 0;
     }
 
     void Shoot()

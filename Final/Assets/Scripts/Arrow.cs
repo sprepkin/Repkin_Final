@@ -8,7 +8,7 @@ public class Arrow : MonoBehaviour
 
     Rigidbody2D rb;
     bool hit;
-    public static bool collected = false;
+    public static int collected = 0;
     //float despawnTimer = 0f;
 
     void Start()
@@ -33,7 +33,7 @@ public class Arrow : MonoBehaviour
         {
             Destroy(gameObject);
         }*/
-        collected = false;
+        collected = 0;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -48,7 +48,7 @@ public class Arrow : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            collected = true;
+            collected = 1;
             Destroy(gameObject);
         }
     }
