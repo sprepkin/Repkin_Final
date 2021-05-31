@@ -55,6 +55,11 @@ public class UI : MonoBehaviour
             GetComponent<Image>().color = new Color(1, 0, 0, deadArrowTransparency);
             ArrowLost();
         }
+
+        if(arrowsDead == 2)
+        {
+            GetComponent<Image>().color = new Color(1, 0, 0, deadArrowTransparency);
+        }
     }
 
     void ArrowLost()
