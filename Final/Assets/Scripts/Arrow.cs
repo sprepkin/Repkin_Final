@@ -8,12 +8,17 @@ public class Arrow : MonoBehaviour
     bool hit;
     public static int collected = 0;
     public float FallTimer = 3f;
+    public AudioSource arrowAudio;
+    public AudioClip wallHitSound;
+    public bool fell = false;
+    public bool grounded = false;
 
     public static bool destroyed = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        arrowAudio = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -23,7 +28,7 @@ public class Arrow : MonoBehaviour
             FallTimer -= Time.deltaTime;
         }
 
-        if (hit == false)
+        if (hit == false && grounded == false)
         {
             float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
@@ -32,6 +37,8 @@ public class Arrow : MonoBehaviour
         if (hit == true && FallTimer <= 0)
         {
             rb.isKinematic = false;
+            hit = false;
+            fell = true;
         }
 
         collected = 0;
@@ -42,6 +49,17 @@ public class Arrow : MonoBehaviour
         hit = true;
         rb.velocity = Vector2.zero;
         rb.isKinematic = true;
+
+        if(hit == true && collision.gameObject.CompareTag("Grid") && fell == false)
+        {
+            arrowAudio.PlayOneShot(wallHitSound, .75f);
+        }
+
+        if (fell == true && collision.gameObject.CompareTag("Grid"))
+        {
+            rb.isKinematic = false;
+            grounded = true;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
