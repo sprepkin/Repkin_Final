@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.flipX = true;
         }
 
-        if (Mathf.Abs(horizontalInput) > 0f)
+        if (Mathf.Abs(horizontalInput) > 0f && isGrounded == true)
         {
             animator.SetBool("IsRunning", true);
         }
