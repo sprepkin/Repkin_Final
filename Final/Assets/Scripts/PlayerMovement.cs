@@ -82,6 +82,14 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
        
+
+        if (Input.GetButtonDown("Cancel"))
+        {
+            SceneManager.LoadScene("SampleScene");
+            Target.triggered = false;
+            Bow.arrowCount = 2;
+            UI.arrowsDead = 0;
+        }
     }
 
 
