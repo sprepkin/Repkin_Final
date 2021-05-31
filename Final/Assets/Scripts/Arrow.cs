@@ -74,6 +74,7 @@ public class Arrow : MonoBehaviour
         {
             collected = 1;
             Destroy(gameObject);
+            Bow.arrowCount += 1;
         }
 
         if (other.gameObject.CompareTag("Death"))

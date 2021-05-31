@@ -69,10 +69,10 @@ public class Bow : MonoBehaviour
             Shoot();
         }
 
-        if (Arrow.collected == 1)
+        /*if (Arrow.collected == 1)
         {
             arrowCount += 1;
-        }
+        }*/
 
         Arrow.collected = 0;
     }
