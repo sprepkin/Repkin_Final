@@ -1,0 +1,896 @@
+fileFormatVersion: 2
+guid: 1e44779820f60e9488b55884b00a56a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8587714304862396133
+    second: ForestBoy-removebg-preview_0
+  - first:
+      213: -3208870429328417633
+    second: ForestBoy-removebg-preview_1
+  - first:
+      213: -1298323174456933915
+    second: ForestBoy-removebg-preview_2
+  - first:
+      213: 3583876344051757150
+    second: ForestBoy-removebg-preview_3
+  - first:
+      213: -7887791139318016850
+    second: ForestBoy-removebg-preview_4
+  - first:
+      213: 7709205693868397177
+    second: ForestBoy-removebg-preview_5
+  - first:
+      213: -1692226336572218742
+    second: ForestBoy-removebg-preview_6
+  - first:
+      213: 2152967677063720447
+    second: ForestBoy-removebg-preview_7
+  - first:
+      213: -476053496235590398
+    second: ForestBoy-removebg-preview_8
+  - first:
+      213: 2410428143365461605
+    second: ForestBoy-removebg-preview_9
+  - first:
+      213: -8559703006562314482
+    second: ForestBoy-removebg-preview_10
+  - first:
+      213: 7024385650092641612
+    second: ForestBoy-removebg-preview_11
+  - first:
+      213: -2974982349223129189
+    second: ForestBoy-removebg-preview_12
+  - first:
+      213: 3205929181848574807
+    second: ForestBoy-removebg-preview_13
+  - first:
+      213: 7593249528885725492
+    second: ForestBoy-removebg-preview_14
+  - first:
+      213: -4660941276228662003
+    second: ForestBoy-removebg-preview_15
+  - first:
+      213: -1890989193787034487
+    second: ForestBoy-removebg-preview_16
+  - first:
+      213: -9013532725509069725
+    second: ForestBoy-removebg-preview_17
+  - first:
+      213: 1237492883486358183
+    second: ForestBoy-removebg-preview_18
+  - first:
+      213: 1572326158306607868
+    second: ForestBoy-removebg-preview_19
+  - first:
+      213: -7948879211510227884
+    second: ForestBoy-removebg-preview_20
+  - first:
+      213: -6016465607557000978
+    second: ForestBoy-removebg-preview_21
+  - first:
+      213: -7787394678710307207
+    second: ForestBoy-removebg-preview_22
+  - first:
+      213: -4737343329330014367
+    second: ForestBoy-removebg-preview_23
+  - first:
+      213: 5823102968196482500
+    second: ForestBoy-removebg-preview_24
+  - first:
+      213: -8595919188284288702
+    second: ForestBoy-removebg-preview_25
+  - first:
+      213: 4298884991908942127
+    second: ForestBoy-removebg-preview_26
+  - first:
+      213: 2115161502207525164
+    second: ForestBoy-removebg-preview_27
+  - first:
+      213: -799555850648117008
+    second: ForestBoy-removebg-preview_28
+  - first:
+      213: 408397818781472498
+    second: ForestBoy-removebg-preview_29
+  - first:
+      213: 2792864809735784962
+    second: ForestBoy-removebg-preview_30
+  - first:
+      213: -1788817353501624623
+    second: ForestBoy-removebg-preview_31
+  - first:
+      213: 1713352809584708610
+    second: ForestBoy-removebg-preview_32
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 9
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 157
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11e222e65f42d880800000000000000
+      internalID: -8587714304862396133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 157
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cdf99885dc773d0800000000000000
+      internalID: -3208870429328417633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 157
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e146de93fd6bfde0800000000000000
+      internalID: -1298323174456933915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 157
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e507126fb8c7cb130800000000000000
+      internalID: 3583876344051757150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 159
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4d97600cfe88290800000000000000
+      internalID: -7887791139318016850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 126
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972d173cbb99cfa60800000000000000
+      internalID: 7709205693868397177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 127
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a826d09dc110488e0800000000000000
+      internalID: -1692226336572218742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 126
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffde74402b0e0ed10800000000000000
+      internalID: 2152967677063720447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 126
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d7bce0ed7b469f0800000000000000
+      internalID: -476053496235590398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 127
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56617e910af837120800000000000000
+      internalID: 2410428143365461605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 126
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07920f7773d53980800000000000000
+      internalID: -8559703006562314482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 100
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d8f1f2881ab7160800000000000000
+      internalID: 7024385650092641612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 100
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f8f75c05db6b6d0800000000000000
+      internalID: -2974982349223129189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 99
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b942bea9fbd7c20800000000000000
+      internalID: 3205929181848574807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 100
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439c22c3734a06960800000000000000
+      internalID: 7593249528885725492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 99
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d4f6f9a92015fb0800000000000000
+      internalID: -4660941276228662003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 73
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984b83ed85bd1c5e0800000000000000
+      internalID: -1890989193787034487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 73
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3646cacedbf79e280800000000000000
+      internalID: -9013532725509069725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 73
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa374498357c2110800000000000000
+      internalID: 1237492883486358183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 48
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf28be87f4602d510800000000000000
+      internalID: 1572326158306607868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 48
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c127bd878efa190800000000000000
+      internalID: -7948879211510227884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 48
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0d5321868318ca0800000000000000
+      internalID: -6016465607557000978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 48
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97674b19ccd9de390800000000000000
+      internalID: -7787394678710307207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 21
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167d73c6753914eb0800000000000000
+      internalID: -4737343329330014367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 22
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5cfd52c41dfc050800000000000000
+      internalID: 5823102968196482500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 24
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241d9589a0925b880800000000000000
+      internalID: -8595919188284288702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 21
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f219df8af15b8ab30800000000000000
+      internalID: 4298884991908942127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 22
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2149adfd209a5d10800000000000000
+      internalID: 2115161502207525164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 24
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0a808a03867e4f0800000000000000
+      internalID: -799555850648117008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 5
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6938307abeaa500800000000000000
+      internalID: 408397818781472498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 5
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a8df94fbf32c620800000000000000
+      internalID: 2792864809735784962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 5
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d63b743818dc27e0800000000000000
+      internalID: -1788817353501624623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBoy-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 8
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20cc6367d4d07c710800000000000000
+      internalID: 1713352809584708610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
