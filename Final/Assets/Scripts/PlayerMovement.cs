@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     bool onWallLeft = false;
     bool onWallRight = false;
     bool canWallJump = true;
+   
+    public static bool firstShot = true;
 
     // Start is called before the first frame update
     void Start()
@@ -89,6 +91,7 @@ public class PlayerMovement : MonoBehaviour
             Target.triggered = false;
             Bow.arrowCount = 2;
             UI.arrowsDead = 0;
+            firstShot = true;
         }
     }
 
@@ -153,6 +156,7 @@ public class PlayerMovement : MonoBehaviour
             Target.triggered = false;
             Bow.arrowCount = 2;
             UI.arrowsDead = 0;
+            firstShot = true;
         }
 
         if (other.gameObject.CompareTag("Arrow"))

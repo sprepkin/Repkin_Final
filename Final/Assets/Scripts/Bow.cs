@@ -39,6 +39,7 @@ public class Bow : MonoBehaviour
         {//Left mouse button just pressed
             dragStartPos = Input.mousePosition;//Store the position when the left mouse button was first pressed
             bowAudio[0].PlayOneShot(bowKnock, 1f);
+            PlayerMovement.firstShot = false;
         }
 
         if (Input.GetMouseButton(0) && arrowCount > 0)
