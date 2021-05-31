@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class UI : MonoBehaviour
 {
     public bool arrow1;
+    public float arrowTransparency = 0.15f;
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +22,11 @@ public class UI : MonoBehaviour
         }
         else if(Bow.arrowCount <= 0)
         {
-            GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+            GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, arrowTransparency);
         }
         else if(Bow.arrowCount == 1 && arrow1 == true)
         {
-            GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+            GetComponent<Image>().color = new Color(0.3f, 0.3f, 0.3f, arrowTransparency);
         }
         else if (Bow.arrowCount == 1 && arrow1 == false)
         {
