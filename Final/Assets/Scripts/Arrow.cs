@@ -73,6 +73,7 @@ public class Arrow : MonoBehaviour
         if (other.gameObject.CompareTag("Death"))
         {
             destroyed = true;
+            UI.arrowsDead += 1;
             Destroy(gameObject);
         }
     }

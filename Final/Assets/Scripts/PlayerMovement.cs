@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip jumpSound;
     public AudioClip wallJumpSound;
     public AudioClip loadSound;
+    public AudioClip arrowCollect;
 
 
     //private Vector2 respawn;
@@ -144,6 +145,11 @@ public class PlayerMovement : MonoBehaviour
             Target.triggered = false;
             Bow.arrowCount = 2;
             UI.arrowsDead = 0;
+        }
+
+        if (other.gameObject.CompareTag("Arrow"))
+        {
+            audio1[3].PlayOneShot(arrowCollect, .5f);
         }
     }
 }

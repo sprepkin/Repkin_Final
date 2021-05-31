@@ -79,6 +79,7 @@ public class Bow : MonoBehaviour
 
     void Shoot()
     {
+        UI.updated = false;
         bowAudio[1].PlayOneShot(bowRelease, .5f);
         GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
         newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce * chargePower;
