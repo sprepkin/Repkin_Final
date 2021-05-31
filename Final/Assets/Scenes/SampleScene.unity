@@ -4132,6 +4132,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!82 &218104070 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3925490953830230720, guid: 371c9f66e40616a4d9f54a0ac4455d57,
+    type: 3}
+  m_PrefabInstance: {fileID: 2019448665548110598}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &259553344
 GameObject:
   m_ObjectHideFlags: 0
@@ -7588,6 +7594,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8537614502435098775, guid: 371c9f66e40616a4d9f54a0ac4455d57,
+        type: 3}
+      propertyPath: targetAudio
+      value: 
+      objectReference: {fileID: 218104070}
+    - target: {fileID: 8537614502435098775, guid: 371c9f66e40616a4d9f54a0ac4455d57,
+        type: 3}
+      propertyPath: targetHitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 942325dfdf6edc74e9470f4f154a68a6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 371c9f66e40616a4d9f54a0ac4455d57, type: 3}
 --- !u!1001 &2846766789544054314
