@@ -9,7 +9,7 @@ public class Bow : MonoBehaviour
     public Transform shotPoint;
     public int arrowDropoff;
     public float slowAmount = .25f;
-    public int arrowCount = 2;
+    public static int arrowCount = 2;
 
     public static bool charged;
     private float chargePower;

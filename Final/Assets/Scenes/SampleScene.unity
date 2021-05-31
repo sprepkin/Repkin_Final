@@ -4476,7 +4476,6 @@ MonoBehaviour:
   shotPoint: {fileID: 1076144357}
   arrowDropoff: 100
   slowAmount: 0.25
-  arrowCount: 2
 --- !u!1 &662600628
 GameObject:
   m_ObjectHideFlags: 0
@@ -4681,6 +4680,7 @@ GameObject:
   - component: {fileID: 814372119}
   - component: {fileID: 814372121}
   - component: {fileID: 814372120}
+  - component: {fileID: 814372122}
   m_Layer: 5
   m_Name: UI Arrow 2
   m_TagString: Untagged
@@ -4744,6 +4744,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814372118}
   m_CullTransparentMesh: 0
+--- !u!114 &814372122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814372118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1195f7bd6cc7d274b8d5c0bb42b6739e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow1: 1
 --- !u!1 &856624076
 GameObject:
   m_ObjectHideFlags: 0
@@ -5410,6 +5423,7 @@ GameObject:
   - component: {fileID: 1042727298}
   - component: {fileID: 1042727300}
   - component: {fileID: 1042727299}
+  - component: {fileID: 1042727301}
   m_Layer: 5
   m_Name: UI Arrow 1
   m_TagString: Untagged
@@ -5473,6 +5487,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042727297}
   m_CullTransparentMesh: 0
+--- !u!114 &1042727301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042727297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1195f7bd6cc7d274b8d5c0bb42b6739e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow1: 0
 --- !u!1 &1060840887
 GameObject:
   m_ObjectHideFlags: 0
