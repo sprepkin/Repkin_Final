@@ -11,7 +11,7 @@ public class Bow : MonoBehaviour
     public float slowAmount = .25f;
     public int arrowCount = 2;
 
-    private bool charged;
+    public static bool charged;
     private float chargePower;
 
     Vector3 dragStartPos;//Where on the screen the mouse started when we began dragging
@@ -39,8 +39,6 @@ public class Bow : MonoBehaviour
             will now receive the same amount of launch power. Take this out and test without it in some different window scales in the game view to see the difference*/
             dragDist = dragDist / Screen.width;
             charged = true;
-            //Now you are ready to launch something with dragDir something like this after spawning the arrow:
-            //arrowRigidbody.velocity = dragDir * launchSpeed;
         }
 
         if (charged == true)

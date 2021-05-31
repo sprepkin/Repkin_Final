@@ -4078,6 +4078,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1289177706}
   - component: {fileID: 1289177707}
+  - component: {fileID: 1289177708}
   m_Layer: 0
   m_Name: BowGraphic
   m_TagString: Untagged
@@ -4137,7 +4138,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 58bd884300d34bf4f81f13ec343cd2b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4149,6 +4150,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1289177708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289177705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d06a258085a4e42a2444cdb2a5ca86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1289177707}
+  sprite1: {fileID: 21300000, guid: 58bd884300d34bf4f81f13ec343cd2b0, type: 3}
+  sprite2: {fileID: 21300000, guid: 31b4f64e95a726a4dac2061c8f6ba880, type: 3}
 --- !u!1 &1904799755
 GameObject:
   m_ObjectHideFlags: 3
