@@ -4615,7 +4615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrow1: 1
   arrowTransparency: 0.15
-  deadArrowTransparency: 0.35
+  deadArrowTransparency: 0
 --- !u!1 &856624076
 GameObject:
   m_ObjectHideFlags: 0
@@ -5360,7 +5360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrow1: 0
   arrowTransparency: 0.15
-  deadArrowTransparency: 0.35
+  deadArrowTransparency: 0
 --- !u!1 &1060840887
 GameObject:
   m_ObjectHideFlags: 0
