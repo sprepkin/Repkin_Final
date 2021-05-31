@@ -9,6 +9,8 @@ public class Arrow : MonoBehaviour
     public static int collected = 0;
     public float FallTimer = 3f;
 
+    public static bool destroyed = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -47,6 +49,12 @@ public class Arrow : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             collected = 1;
+            Destroy(gameObject);
+        }
+
+        if (other.gameObject.CompareTag("Death"))
+        {
+            destroyed = true;
             Destroy(gameObject);
         }
     }

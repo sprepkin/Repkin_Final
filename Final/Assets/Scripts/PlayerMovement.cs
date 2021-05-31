@@ -135,6 +135,8 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene("SampleScene");
             Target.triggered = false;
+            Bow.arrowCount = 2;
+            UI.arrowsDead = 0;
         }
     }
 }
