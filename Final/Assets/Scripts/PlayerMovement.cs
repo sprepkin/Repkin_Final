@@ -134,6 +134,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Death"))
         {
             SceneManager.LoadScene("SampleScene");
+            Target.triggered = false;
         }
     }
 }
