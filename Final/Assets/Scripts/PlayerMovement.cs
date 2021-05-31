@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     public float wallJumpForce;
     public SpriteRenderer spriteRenderer;
+    public Animator animator;
     //public Animator animator;
 
 
@@ -96,14 +97,14 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.flipX = true;
         }
 
-        /*if (Mathf.Abs(horizontalInput) > 0f)
+        if (Mathf.Abs(horizontalInput) > 0f)
         {
             animator.SetBool("IsRunning", true);
         }
         else
         {
             animator.SetBool("IsRunning", false);
-        }*/
+        }
     }
 
     void Jump()
