@@ -8,8 +8,9 @@ public class Arrow : MonoBehaviour
     bool hit;
     public static int collected = 0;
     public float FallTimer = 3f;
-    public AudioSource arrowAudio;
+    public AudioSource[] arrowAudio;
     public AudioClip wallHitSound;
+    public AudioClip targetHitSound;
     public bool fell = false;
     public bool grounded = false;
 
@@ -18,7 +19,7 @@ public class Arrow : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        arrowAudio = GetComponent<AudioSource>();
+        arrowAudio = GetComponents<AudioSource>();
     }
 
     void Update()
@@ -52,10 +53,15 @@ public class Arrow : MonoBehaviour
 
         if(hit == true && collision.gameObject.CompareTag("Grid") && fell == false)
         {
-            arrowAudio.PlayOneShot(wallHitSound, .75f);
+            arrowAudio[0].PlayOneShot(wallHitSound, .75f);
         }
 
-        if (fell == true && collision.gameObject.CompareTag("Grid"))
+        if (hit == true && collision.gameObject.CompareTag("Target") && fell == false)
+        {
+            arrowAudio[1].PlayOneShot(targetHitSound, .75f);
+        }
+
+        if (fell == true && (collision.gameObject.CompareTag("Grid") || collision.gameObject.CompareTag("Target")))
         {
             rb.isKinematic = false;
             grounded = true;
