@@ -15,7 +15,10 @@ public class PlayerMovement : MonoBehaviour
     public float wallJumpForce;
     public SpriteRenderer spriteRenderer;
     public Animator animator;
-    //public Animator animator;
+    public AudioSource[] audio1;
+    public AudioClip jumpSound;
+    public AudioClip wallJumpSound;
+    public AudioClip loadSound;
 
 
     //private Vector2 respawn;
@@ -29,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //Vector2 respawn = new Vector2(spawnPoint.transform.position.x, spawnPoint.transform.position.y);
         rB2D = GetComponent<Rigidbody2D>();
+        audio1 = GetComponents<AudioSource>();
     }
 
     // Update is called once per frame
@@ -111,11 +115,14 @@ public class PlayerMovement : MonoBehaviour
     {
         rB2D.velocity = new Vector2(rB2D.velocity.x, jumpForce);
         isGrounded = false;
+        audio1[1].PlayOneShot(jumpSound, 1f);
     }
 
     void WallJump()
     {
         canWallJump = false;
+
+        audio1[0].PlayOneShot(wallJumpSound, 1f);
 
         if (onWallLeft == true)
         {

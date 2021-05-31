@@ -10,12 +10,20 @@ public class Bow : MonoBehaviour
     public int arrowDropoff;
     public float slowAmount = .25f;
     public static int arrowCount = 2;
+    public AudioSource[] bowAudio;
+    public AudioClip bowKnock;
+    public AudioClip bowRelease;
 
     public static bool charged;
     private float chargePower;
 
     Vector3 dragStartPos;//Where on the screen the mouse started when we began dragging
     Vector3 dragEndPos;
+
+    void Start()
+    {
+        bowAudio = GetComponents<AudioSource>();
+    }
 
     void Update()
     {
@@ -30,6 +38,7 @@ public class Bow : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && arrowCount > 0)
         {//Left mouse button just pressed
             dragStartPos = Input.mousePosition;//Store the position when the left mouse button was first pressed
+            bowAudio[0].PlayOneShot(bowKnock, 1f);
         }
 
         if (Input.GetMouseButton(0) && arrowCount > 0)
@@ -70,6 +79,7 @@ public class Bow : MonoBehaviour
 
     void Shoot()
     {
+        bowAudio[1].PlayOneShot(bowRelease, .5f);
         GameObject newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
         newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce * chargePower;
         arrowCount -= 1;
