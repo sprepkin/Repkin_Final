@@ -15,10 +15,13 @@ public class UI : MonoBehaviour
     public int arrowNum = 0;
     public static bool updated = false;
 
+    bool accounted = false;
+
     // Start is called before the first frame update
     void Start()
     {
         UIAudio = GetComponent<AudioSource>();
+        accounted = false;
     }
 
     // Update is called once per frame
@@ -27,17 +30,17 @@ public class UI : MonoBehaviour
         if(Bow.arrowCount == 2 && updated == false)
         {
             arrowNum = 2;
-            ArrowCollected();
+            ArrowShot();
         }
         else if(Bow.arrowCount <= 0 && updated == false)
         {
             arrowNum = 0;
-            ArrowCollected();
+            ArrowShot();
         }
         else if(Bow.arrowCount == 1 && updated == false)
         {
             arrowNum = 1;
-            ArrowCollected();
+            ArrowShot();
         }
 
 
@@ -47,9 +50,10 @@ public class UI : MonoBehaviour
             ArrowLost();
         }
 
-        if(arrowsDead == 2)
+        if(arrowsDead == 2 && accounted == false)
         {
             GetComponent<Image>().color = new Color(1, 0, 0, deadArrowTransparency);
+            ArrowLost();
         }
     }
 
@@ -58,18 +62,18 @@ public class UI : MonoBehaviour
         if(arrowsDead == 1 && arrow1 == true)
         {
             GetComponent<Image>().color = new Color(1, 0, 0, deadArrowTransparency);
-            UIAudio.PlayOneShot(arrowLost, .75f);
+            UIAudio.PlayOneShot(arrowLost, .5f);
         }
         
-        if(arrowsDead == 2)
+        if(arrowsDead == 2 && accounted == false)
         {
-            GetComponent<Image>().color = new Color(1, 0, 0, deadArrowTransparency);
-            UIAudio.PlayOneShot(arrowLost, .75f);
+            UIAudio.PlayOneShot(arrowLost, .5f);
+            accounted = true;
         }
         updated = true;
     }
 
-    void ArrowCollected()
+    void ArrowShot()
     {
         if(arrowNum == 2 && arrowsDead == 0)
         {
