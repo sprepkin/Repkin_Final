@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Grid
   - Arrow
+  - Death
   layers:
   - Default
   - TransparentFX

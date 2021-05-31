@@ -127,16 +127,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /*void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
 
         if (other.gameObject.CompareTag("Death"))
         {
-            transform.position = respawn;
-            score = 0;
-            SetCountText();
-
             SceneManager.LoadScene("SampleScene");
         }
-    }*/
+    }
 }
