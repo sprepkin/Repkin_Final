@@ -7,6 +7,7 @@ public class UI : MonoBehaviour
 {
     public bool arrow1;
     public float arrowTransparency = 0.15f;
+    public float deadArrowTransparency = 0.35f;
     public static int arrowsDead = 0;
 
     // Start is called before the first frame update
@@ -36,11 +37,11 @@ public class UI : MonoBehaviour
 
         if(arrowsDead == 1 && arrow1 == true)
         {
-            GetComponent<Image>().color = new Color(1, 0, 0, .3f);
+            GetComponent<Image>().color = new Color(1, 0, 0, deadArrowTransparency);
         }
         else if(arrowsDead == 2)
         {
-            GetComponent<Image>().color = new Color(1, 0, 0, .3f);
+            GetComponent<Image>().color = new Color(1, 0, 0, deadArrowTransparency);
         }
 
         if (Arrow.destroyed == true)
