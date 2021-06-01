@@ -7,11 +7,17 @@ public class Target : MonoBehaviour
     public static bool triggered = false;
     public AudioSource targetAudio;
     public AudioClip targetDing;
+    public int animCounter = 0;
+    public GameObject associatedBridge;
+    public string triggerName;
+
+    Animator bridgeAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
         targetAudio = GetComponent<AudioSource>();
+        bridgeAnimator = associatedBridge.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -21,7 +27,7 @@ public class Target : MonoBehaviour
     {
         if (col.gameObject.tag == "Arrow" && triggered == false)
         {
-            triggered = true;
+            bridgeAnimator.SetTrigger(triggerName);
             targetAudio.PlayOneShot(targetDing, .75f);
         }
     }
